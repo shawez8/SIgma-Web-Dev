@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificty of this is 1 */
+        h1{
+            color: magenta;
+        }
+        /* The specificty of this is 1 + 10 */
+        h1.red{
+            color: aqua;
+        }
+        /* The specificty of this is 10 */
+        .cpurple{
+            color: teal;
+        }
+        /* The specificty of this is 10 */
+        .cblue{
+            color: rgb(0, 0, 145);
+        }
+        /* Example of attribute selector */
+      [data-x=a]{
+        background-color: violet;
+      }
+      
+      
+      
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="red cpurple cblue" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
